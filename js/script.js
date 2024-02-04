@@ -30,7 +30,10 @@ document.getElementById('div2').classList.add('hidden');
 document.getElementById('div1').classList.remove('hidden');
 document.getElementById('div3').classList.add('hidden');
 document.getElementById('div4').classList.add('hidden');
-  
+home.classList.add('btn-primary');
+grade12.classList.remove('btn-primary');
+grade11.classList.remove('btn-primary');
+grade10.classList.remove('btn-primary');
   });
   
   grade12.addEventListener('click', () => {
@@ -38,7 +41,10 @@ document.getElementById('div1').classList.add('hidden');
 document.getElementById('div2').classList.remove('hidden');
 document.getElementById('div3').classList.add('hidden');
 document.getElementById('div4').classList.add('hidden');
-
+grade12.classList.add('btn-primary');
+home.classList.remove('btn-primary');
+grade11.classList.remove('btn-primary');
+grade10.classList.remove('btn-primary');
   });
 
   grade11.addEventListener('click', () => {
@@ -46,7 +52,10 @@ document.getElementById('div1').classList.add('hidden');
 document.getElementById('div2').classList.add('hidden');
 document.getElementById('div3').classList.remove('hidden');
 document.getElementById('div4').classList.add('hidden');
-
+grade11.classList.add('btn-primary');
+home.classList.remove('btn-primary');
+grade12.classList.remove('btn-primary');
+grade10.classList.remove('btn-primary');
 
   
   });
@@ -56,5 +65,8 @@ document.getElementById('div1').classList.add('hidden');
 document.getElementById('div2').classList.add('hidden');
 document.getElementById('div3').classList.add('hidden');
 document.getElementById('div4').classList.remove('hidden');
-
+grade10.classList.add('btn-primary');
+home.classList.remove('btn-primary');
+grade12.classList.remove('btn-primary');
+grade11.classList.remove('btn-primary');
   });
