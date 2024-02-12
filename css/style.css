@@ -4,22 +4,24 @@
         background-color: #f4f4f4;
        margin: 0;
        padding: 0;
+
     }
-    
+ .blue{
+ color:blue;
+ }   
     header {
         background-color: #333;
         color: #fff;
         padding: 10px;
         text-align: center;
+
     }
 
     section {
-        max-width: 800px;
-
+        max-width: 500px;
         margin: 20px auto;
         padding: 10px;
-        background-color: #fff;
-        
+        background-color: #fff;       
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 
@@ -46,6 +48,15 @@
     }
 
     .update {
+
+        margin-bottom: 15px;
+        padding: 10px;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+    .update:hover {
+
         margin-bottom: 15px;
         padding: 10px;
         background-color: #f9f9f9;
@@ -74,7 +85,7 @@
         border-radius: 3px;
     }
 .scrolla{
-height:500px;
+max-height:500px;
 overflow-y:scroll;
 }
 
@@ -111,8 +122,8 @@ overflow-y:scroll;
    0% { transform: rotate(0deg); }
    100% { transform: rotate(360deg); }
    }
-   </style>
-   <style>
+
+
    #project-label {
    display: block;
    font-weight: bold;
@@ -145,7 +156,7 @@ overflow-y:scroll;
    color: #fff;
    border: none;
    cursor: pointer;
-   padding:20px 40px;
+   padding:10px 30px;
    margin:5px;
    border-radius:5px;
    }
@@ -166,3 +177,9 @@ overflow-y:scroll;
    #project{
    width:80%;
    }
+   
+   
+  
+.comp{
+font-size:3em
+}
