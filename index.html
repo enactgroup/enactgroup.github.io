@@ -10,23 +10,94 @@
     <link rel="stylesheet" href="https://365-quotes.github.io/awesome/css/all.min.css">
     <link rel="stylesheet" href="https://vigrodeepsa.github.io/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <title>An.Act Group (extra lessons) - Recent Updates by Mr Mangena & Lodwick Masete</title>
+    <title>An.Act Group lessons - Recent Updates by Mr Mangena</title>
     
+    
+    
+    <style type="text/css">
+    * {
+    box-sizing: border-box;
+    }
+    html, body {
+    margin: 0;
+    padding: 0;
+    }
+    body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    }
+    main {
+    flex: 1 0 auto;
+    }
+    footer {
+    color: #fff;
+    background: #333;
+    position: relative; /* required to position the copyright at the bottom */
+    font-size: 80%;
+    }
+    .footer-copyright {
+    width: 100%;
+    height: 40px;
+    background: #111;
+    /* positions the copyright at the bottom of the footer */
+    padding: 10px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    }
+    .footer-body {
+    margin-bottom: 40px;
+    }
+    /* the clearfix hack */
+    .footer-body::after {
+    content: "";
+    display: block;
+    clear: both;
+    }
+    /* float the divs */
+    .footer-body > div {
+    float: left;
+    padding: 20px;
+    }
+    /* sets the width of the first column */
+    .footer-body > div:first-child {
+    font-size: 150%;
+    width: 35%;
+    text-align: center;
+    }
+    /* sets the width of the second column */
+    .footer-body > div:last-child {
+    width: 65%;
+    }
+    .footer-body ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    }
+    .footer-body li > a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 7px;
+    }
+    </style>
 </head>
 <body>
 
     <header>
-        <b>An.Act Group</b>
+        <b class="comp">An.Act Group</b>
         <p>We Act For change<br>
-           We are here to support your academic journey!.
+  
            </p>
-    <div id="loading">
+           <div id="flite" hidden></div>
+    <div id="loading" hidden>
   <center><div class="spinner"></div></center>
 
     </div>
     </header>
 
-</head>
+<main>
 <div class="scrolla">
 
 <div class="button-container">
@@ -57,6 +128,48 @@
   <fieldset>
       <legend>Recent Updates</legend>
 
+  <div id="share-div" class="update" onclick="copyLink('https://enactgroup.github.io')">
+ 
+      <button>     <h3 class="fa fa-share"></h3>share</button>
+      </h3> 
+ 
+     <b class="blue">https://enactgroup.github.io <div class="fa fa-copy" id="actMsg"></div></b>
+
+  <script type="text/javascript">
+  
+  function copyLink(link) {
+  const textArea = document.createElement('textarea');
+  textArea.value = link;
+  textArea.className = "no_style_is_set_for_now";
+  document.body.appendChild(textArea);
+  textArea.select();
+  document.execCommand('copy');
+
+  //  alert("copied");
+  document.body.removeChild(textArea);
+  document.getElementById('share-div').innerHTML='<div class="update">Link Copied To Clipboard </div>';
+  }
+  </script>
+  </div>
+
+
+  <style type="text/css">
+    .progress{
+      width: 0%;
+      height: 0px;
+    }
+     .gode{
+      transition-timing-function: ease-out;
+      transition-property: width, background-color;
+      transition-duration: 5s;
+      width: 100%;
+      height: 10px;
+      background: green;
+    }
+
+  </style>
+
+
 
 
 
@@ -74,7 +187,6 @@
        Our classes are available in the afternoons, evenings, and on weekends to accommodate your schedule. 
        
           </p>
-
       </div>
 
       <div class="update">
@@ -87,6 +199,7 @@
     <li>In addition, we offer free learning materials in thw following subjects : Agriculture, life science, maths literacy, and physical science.</li>
           </p>
      <i class="fa fa-clock"></i>
+
       <b id="register"></b> <i id="closing-reg"> left for CLOSING registrations</i>
       </div>
       
@@ -107,7 +220,6 @@
 
 <div id="div2" class="hidden">
 <h2>Grade 12 Tutorials Unvailable</h2>
-
 check the grade 10 tab
 </div>
 
@@ -137,10 +249,7 @@ check the grade 10 tab
 
 
   
-  
-
-
-  
+    
 
 
 <div id="search-bar" style="display:none">
@@ -156,15 +265,35 @@ check the grade 10 tab
 <center><i class="fa fa-pencil" ></i> Directed & Found by <a href="https://lodwickmasete.github.io" >Mr Mangena</a></center>
 <br>
 <center><i class="fa fa-code" ></i> Developed By <a href="https://lodwickmasete.github.io"> Lodwick Masete</a></center>
+        
+        
+         
         </div>
 
 
     </section>
 
-    </div>
+
+</main>
 
 
-
+<footer>
+<div class="footer-body">
+<div> En Act Group <br> <a href="tel:+27 68 848 4470">068 848 4470</a></div>
+<div>
+<p>We are here to support your academic journey!</p>
+<ul >
+<li hidden><a href="#"> About </a></li>
+<li><a href="tel:+27 68 848 4470"> Contact </a></li>
+<li hidden><a href="#"> Terms & Conditions </a></li>
+<li hidden><a href="#"> Privacy Policy </a></li>
+</ul>
+</div>
+</div>
+<div class="footer-copyright">
+© En Act Group Pty Ltd 2023 - 2024
+</div>
+</footer>
 
 
 
@@ -277,7 +406,7 @@ grade12.addEventListener('click', () => {
 
 });
 </script>
-    call or WhatsApp us at <b><a href="tel:0648484470" >064 8484 470</a>
+
 
 </body>
 </html>
